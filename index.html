@@ -3,47 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAD Base</title>
+    <title>CAD System</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Computer Aided Dispatch (CAD) System</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#dashboard">Dashboard</a></li>
-            <li><a href="#calls">Calls</a></li>
-            <li><a href="#units">Units</a></li>
-            <li><a href="#reports">Reports</a></li>
-            <li><a href="#settings">Settings</a></li>
-        </ul>
-    </nav>
-    <main id="content">
-        <section id="dashboard">
-            <h2>Dashboard</h2>
-            <p>Welcome to the CAD system. Select a menu option to begin.</p>
-        </section>
-        <section id="calls" style="display:none;">
-            <h2>Calls</h2>
-            <p>List of current calls will appear here.</p>
-        </section>
-        <section id="units" style="display:none;">
-            <h2>Units</h2>
-            <p>List of available units will appear here.</p>
-        </section>
-        <section id="reports" style="display:none;">
-            <h2>Reports</h2>
-            <p>Reports will be listed here.</p>
-        </section>
-        <section id="settings" style="display:none;">
-            <h2>Settings</h2>
-            <p>Settings options will appear here.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 CAD System</p>
-    </footer>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="dispatch">Dispatch</a></li>
+                <li><a href="#" id="units">Units</a></li>
+                <li><a href="#" id="settings">Settings</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <div id="home-content" class="content-section">Welcome to the CAD System!</div>
+            <div id="dispatch-content" class="content-section" style="display: none;">
+                <h2>Dispatch</h2>
+                <p>Dispatch information goes here.</p>
+            </div>
+            <div id="units-content" class="content-section" style="display: none;">
+                <h2>Units</h2>
+                <p>Units information goes here.</p>
+            </div>
+            <div id="settings-content" class="content-section" style="display: none;">
+                <h2>Settings</h2>
+                <p>Settings information goes here.</p>
+            </div>
+        </main>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
